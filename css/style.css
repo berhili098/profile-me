@@ -53,29 +53,47 @@ body {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
     margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
-.github-link {
+.social-link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
     padding: 1rem 2rem;
-    background: #2d3436;
     color: white;
     text-decoration: none;
     border-radius: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
 }
 
-.github-link:hover {
+.social-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.github-link i {
+.social-link i {
     font-size: 1.5rem;
+}
+
+/* Specific link styles */
+.github-link {
+    background: #2d3436;
+}
+
+.linkedin-link {
+    background: #0077b5;
+}
+
+.email-link {
+    background: #ea4335;
+}
+
+.cv-link {
+    background: #2ecc71;
 }
 
 /* Animations */
@@ -99,7 +117,7 @@ body {
     }
 }
 
-/* Responsive design */
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .name {
         font-size: 2.5rem;
@@ -112,6 +130,15 @@ body {
     .container {
         padding: 1rem;
     }
+    
+    .social-links {
+        gap: 1rem;
+    }
+    
+    .social-link {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -123,7 +150,14 @@ body {
         font-size: 1.2rem;
     }
     
-    .github-link {
-        padding: 0.8rem 1.5rem;
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
     }
 } 
