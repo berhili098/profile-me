@@ -193,8 +193,7 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    /* Using a more abstract tech-related image for sophistication */
-    background: url('https://images.unsplash.com/photo-1542831371-d5337e7a791a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3klMjBhYnN0cmFjdHxlbnwwfHwwfHww&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1674083324751-7747c56e77ef?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
     position: relative;
     color: #f5f5f5;
     padding: 160px 0 100px; /* More padding top/bottom */
@@ -568,45 +567,106 @@ a:hover {
 }
 
 
-/* Responsive Design */
-@media (max-width: 992px) {
+/* === Responsive Design Adjustments === */
+
+/* Tablets & Smaller Desktops (less than 1200px, mostly for initial container scale) */
+@media (max-width: 1200px) {
     .container {
-        width: 95%;
-        padding: 0 1rem;
+        padding: 0 1rem; /* Slightly less padding on wider screens */
     }
-    .hero-content .name { font-size: 3.5rem; }
-    .hero-content .title { font-size: 1.8rem; }
-    .hero-cta { flex-direction: column; gap: 1rem; }
-    .hero-cta .btn { width: 80%; margin: 0 auto; }
-
-    .timeline::after { left: 31px; }
-    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
-    .timeline-item:nth-child(odd) { left: 0; }
-    .timeline-item:nth-child(even) { left: 0; }
-    .timeline-item::before { left: 23px; }
-
-    .about-content { flex-direction: column; gap: 2rem; }
+    .hero-content .name { font-size: 4rem; }
+    .hero-content .title { font-size: 2rem; }
+    h1 { font-size: 2.8rem; }
+    h2.section-title { font-size: 2.2rem; margin-bottom: 3rem; }
+    .section-padding { padding: 70px 0; }
+    .social-links-hero a { font-size: 2rem; margin: 0 1rem; }
+    .social-links-footer .social-icon { font-size: 2rem; margin: 0 1rem; }
 }
 
+/* Medium Tablets & Large Phones (Max 992px) */
+@media (max-width: 992px) {
+    .hero-section { padding: 140px 0 80px; min-height: 85vh; }
+    .hero-content .name { font-size: 3.5rem; }
+    .hero-content .title { font-size: 1.8rem; }
+    .hero-content .bio { font-size: 1.05rem; }
 
+    .hero-cta {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 1rem;
+    }
+    .hero-cta .btn {
+        width: 70%; /* Make buttons take more width */
+        margin: 0 auto; /* Center buttons */
+        font-size: 0.9rem;
+        padding: 0.8rem 2rem;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2.section-title { font-size: 2rem; margin-bottom: 2.5rem; }
+    h3 { font-size: 1.6rem; }
+    h4 { font-size: 1.2rem; }
+    p { font-size: 0.95rem; } /* Slightly smaller paragraph text */
+
+    .about-content {
+        flex-direction: column; /* Stack about content */
+        gap: 2.5rem;
+    }
+
+    /* Timeline Adjustments for smaller screens */
+    .timeline::after { left: 31px; } /* Move central line to left */
+    .timeline-item {
+        width: 100%; /* Make items full width */
+        padding-left: 70px; /* Allocate space for circle and line */
+        padding-right: 25px; /* Keep some right padding */
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) { /* Both sides behave the same */
+        left: 0;
+        padding-right: 25px;
+    }
+    .timeline-item::before { /* Move circle to the left side for all items */
+        left: 23px;
+        right: auto;
+    }
+    .timeline-content {
+        padding: 20px 25px; /* Adjust content padding */
+    }
+
+    .projects-grid, .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust min-width */
+        gap: 1.5rem; /* Slightly less gap */
+    }
+    .project-card, .skill-category, .education-item, .certifications-list li {
+        padding: 1.5rem; /* Reduce card padding slightly */
+    }
+}
+
+/* Small Tablets & Phones (Max 768px) */
 @media (max-width: 768px) {
+    .navbar {
+        padding: 0.8rem 0; /* Slightly smaller navbar height */
+    }
+    .nav-brand { font-size: 1.6rem; }
+    .nav-toggler { font-size: 1.6rem; display: block; } /* Show toggler */
+
     .nav-links {
         position: absolute;
-        top: 100%;
+        top: 100%; /* Position below navbar */
         left: 0;
         width: 100%;
         background-color: rgba(10, 12, 15, 0.98); /* Darker, almost opaque mobile menu */
         backdrop-filter: blur(8px);
-        flex-direction: column;
+        flex-direction: column; /* Stack links vertically */
         align-items: center;
         padding: 1rem 0;
-        max-height: 0;
+        max-height: 0; /* Hidden by default */
         overflow: hidden;
-        transition: max-height 0.4s ease-in-out; /* Slower transition */
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; /* Smooth transition */
         box-shadow: 0 5px 10px rgba(0,0,0,0.3);
     }
     .nav-links.active {
-        max-height: 400px; /* More space */
+        max-height: 400px; /* Max height when active */
+        padding: 1.5rem 0; /* More padding when open */
     }
     .nav-links li {
         width: 100%;
@@ -614,36 +674,79 @@ a:hover {
     }
     .nav-links li a {
         display: block;
-        padding: 1rem 1rem; /* More padding */
+        padding: 0.8rem 1rem; /* Adjust link padding */
+        font-size: 1rem;
         color: #e0e6f0;
     }
-    .nav-links li a::after { display: none; }
+    .nav-links li a::after { display: none; } /* Hide underline for mobile menu */
     .nav-links li a:hover { background-color: #1A1E24; color: #FFC107; }
 
-    .nav-toggler { display: block; color: #e0e6f0; }
-
-    .hero-section { padding: 120px 0 80px; min-height: 80vh; }
+    .hero-section { padding: 100px 0 60px; min-height: 70vh; }
     .hero-content .name { font-size: 2.8rem; }
-    .hero-content .title { font-size: 1.6rem; }
-    .hero-content .bio { font-size: 1.05rem; }
-    .hero-cta .btn { padding: 0.8rem 1.8rem; font-size: 0.85rem; }
+    .hero-content .title { font-size: 1.4rem; }
+    .hero-content .bio { font-size: 0.95rem; max-width: 90%; }
+    .hero-cta .btn { width: 90%; } /* Even wider buttons */
 
-    h1 { font-size: 2.5rem; }
-    h2.section-title { font-size: 2rem; margin-bottom: 2.5rem; }
-    h3 { font-size: 1.5rem; }
+    h1 { font-size: 2.2rem; }
+    h2.section-title { font-size: 1.8rem; margin-bottom: 2rem; }
+    h3 { font-size: 1.4rem; }
+    h4 { font-size: 1.1rem; }
 
-    .projects-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: 1fr; }
-    .contact-methods { flex-direction: column; gap: 2rem; }
+    .section-padding { padding: 60px 0; } /* Reduce section padding */
+
+    .projects-grid, .skills-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1.5rem;
+    }
+    .project-card, .skill-category, .education-item, .certifications-list li {
+        padding: 1.2rem 1.5rem; /* Further reduce padding */
+    }
+
+    .contact-methods {
+        flex-direction: column; /* Stack contact methods */
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .contact-method i { font-size: 2rem; }
+    .contact-method a { font-size: 1rem; }
+
+    .social-links-footer .social-icon { font-size: 1.8rem; margin: 0 0.8rem; }
 }
 
+/* Smallest Phones (Max 480px) */
 @media (max-width: 480px) {
+    .container {
+        padding: 0 0.8rem; /* Even less padding on smallest screens */
+    }
+    .hero-section { padding: 80px 0 40px; min-height: 60vh; }
     .hero-content .name { font-size: 2.2rem; }
-    .hero-content .title { font-size: 1.3rem; }
-    .hero-cta .btn { width: 90%; }
+    .hero-content .title { font-size: 1.2rem; }
+    .hero-content .bio { font-size: 0.9rem; }
+    .hero-cta .btn { padding: 0.7rem 1.2rem; font-size: 0.8rem; width: 95%; }
 
-    .social-links-hero a { font-size: 1.8rem; margin: 0 1rem; }
-    .social-links-footer .social-icon { font-size: 1.8rem; margin: 0 1rem; }
+    h1 { font-size: 1.8rem; }
+    h2.section-title { font-size: 1.6rem; margin-bottom: 1.5rem; }
+    h2.section-title::after { width: 50px; height: 3px; }
+    h3 { font-size: 1.2rem; }
+    h4 { font-size: 1rem; }
+    p { font-size: 0.85rem; }
 
-    .timeline-content { padding: 20px 25px; }
+    .section-padding { padding: 40px 0; }
+
+    .timeline-item { padding-left: 60px; } /* Adjust timeline for smallest screens */
+    .timeline-item::before { left: 18px; width: 18px; height: 18px; border-width: 3px; }
+    .timeline-content { padding: 15px 20px; }
+
+    .project-card, .skill-category, .education-item, .certifications-list li {
+        padding: 1rem; /* Minimal padding for cards */
+    }
+    .project-card h4 { font-size: 1.2rem; }
+    .skill-category h4 { font-size: 1.2rem; }
+
+    .contact-methods { gap: 1rem; }
+    .contact-method i { font-size: 1.8rem; }
+    .contact-method a { font-size: 0.9rem; }
+
+    .social-links-hero a { font-size: 1.6rem; margin: 0 0.6rem; }
+    .social-links-footer .social-icon { font-size: 1.6rem; margin: 0 0.6rem; }
 }
