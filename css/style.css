@@ -705,7 +705,7 @@ a:hover {
     .nav-links li a::after { display: none; }
     .nav-links li a:hover { background-color: #1A1E24; color: #FFC107; }
 
-    .hero-section { padding: 100px 0 60px; min-height: 70vh; }
+    .hero-section { padding: 100px 0 60px; min-height: 70vh; padding-top: 120px; }
     .hero-content .name { font-size: 2.8rem; }
     .hero-content .title { font-size: 1.4rem; }
     .hero-content .bio { font-size: 0.95rem; max-width: 90%; }
@@ -760,6 +760,19 @@ a:hover {
     .contact-method a { font-size: 1rem; }
 
     .social-links-footer .social-icon { font-size: 1.8rem; margin: 0 0.8rem; }
+
+    /* --- Hide timeline line and circles on mobile --- */
+    .timeline::after,
+    .timeline-item::before {
+        display: none !important;
+    }
+    .timeline-item {
+        padding-left: 0 !important;
+    }
+
+    .hero-section {
+        padding-top: 170px !important;
+    }
 }
 
 /* Smallest Phones (Max 480px) */
