@@ -665,14 +665,27 @@ a:hover {
     }
 }
 
-/* Small Tablets & Phones (Max 768px) */
+/* === Responsive: Small Tablets & Phones (Max 768px) === */
 @media (max-width: 768px) {
     .navbar {
         padding: 0.8rem 0;
     }
-    .nav-brand { font-size: 1.6rem; }
-    .nav-toggler { font-size: 1.6rem; display: block; }
-
+    .nav-brand {
+        font-size: 1.6rem;
+        position: sticky;
+        top: 0;
+        z-index: 1100;
+        background: rgba(10, 12, 15, 0.95);
+        animation: fadeInDown 1s ease;
+        /* Always visible on mobile */
+        opacity: 1 !important;
+        pointer-events: auto;
+        transition: none;
+    }
+    .nav-toggler {
+        font-size: 1.6rem;
+        display: block;
+    }
     .nav-links {
         position: absolute;
         top: 100%;
@@ -705,8 +718,12 @@ a:hover {
     .nav-links li a::after { display: none; }
     .nav-links li a:hover { background-color: #1A1E24; color: #FFC107; }
 
-    .hero-section { padding: 100px 0 60px; min-height: 70vh; padding-top: 120px; }
-    .hero-content .name { font-size: 2.8rem; }
+    /* Only one hero name visible on mobile */
+    .hero-content .name { display: none; }
+    .hero-section {
+        padding: 170px 0 60px !important;
+        min-height: 70vh;
+    }
     .hero-content .title { font-size: 1.4rem; }
     .hero-content .bio { font-size: 0.95rem; max-width: 90%; }
     .hero-cta .btn { width: 90%; }
@@ -715,53 +732,9 @@ a:hover {
     h2.section-title { font-size: 1.8rem; margin-bottom: 2rem; }
     h3 { font-size: 1.4rem; }
     h4 { font-size: 1.1rem; }
-
     .section-padding { padding: 60px 0; }
 
-    /* Further Timeline Adjustments for 768px */
-    .timeline-item {
-        padding-left: 50px; /* Reduce padding for smaller screen */
-        padding-right: 10px;
-    }
-    .timeline-item::before {
-        left: 10px; /* Adjust circle position for even tighter fit */
-        width: 14px; /* Even smaller circle */
-        height: 14px;
-        border-width: 2px; /* Thinner border */
-        top: 20px; /* Fine-tune vertical alignment */
-    }
-    .timeline-content {
-        padding: 18px 20px;
-    }
-    .timeline-content h3 {
-        font-size: 1.3rem;
-    }
-    .timeline-content .company-duration {
-        font-size: 0.85rem;
-    }
-    .timeline-content ul li {
-        font-size: 0.85rem;
-    }
-
-    .projects-grid, .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    .project-card, .skill-category, .education-item, .certifications-list li {
-        padding: 1.2rem 1.5rem;
-    }
-
-    .contact-methods {
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-bottom: 2.5rem;
-    }
-    .contact-method i { font-size: 2rem; }
-    .contact-method a { font-size: 1rem; }
-
-    .social-links-footer .social-icon { font-size: 1.8rem; margin: 0 0.8rem; }
-
-    /* --- Hide timeline line and circles on mobile --- */
+    /* Timeline mobile cleanup */
     .timeline::after,
     .timeline-item::before {
         display: none !important;
@@ -769,9 +742,53 @@ a:hover {
     .timeline-item {
         padding-left: 0 !important;
     }
+    .contact-methods {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .contact-method i { font-size: 2rem; }
+    .contact-method a { font-size: 1rem; }
+    .social-links-footer .social-icon { font-size: 1.8rem; margin: 0 0.8rem; }
+}
 
-    .hero-section {
-        padding-top: 170px !important;
+/* === Desktop: Hero Name Animation to Navbar === */
+@media (min-width: 769px) {
+  /* Hide nav-brand by default, fade in when hero name shrinks */
+  .nav-brand {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+  .nav-brand.fade-in {
+    opacity: 1 !important;
+    pointer-events: auto;
+    animation: fadeInDown 0.7s;
+  }
+  .hero-content .name {
+    transition: 
+      transform 0.5s cubic-bezier(0.4,0,0.2,1),
+      opacity 0.5s cubic-bezier(0.4,0,0.2,1);
+    will-change: transform, opacity;
+    z-index: 2;
+    position: relative;
+  }
+  .hero-content .name.shrink {
+    transform: scale(0.4) translateY(-120px);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Fade-in animation for nav-brand */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
