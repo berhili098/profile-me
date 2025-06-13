@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Sitemap location
+Sitemap: https://oussama-berhili.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10 
