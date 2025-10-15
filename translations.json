@@ -1,0 +1,360 @@
+{
+    "en": {
+        "meta": {
+            "title": "Oussama Berhili | Senior Mobile Developer | Flutter & Swift Specialist in Morocco",
+            "description": "Senior Mobile Developer specializing in Flutter and Swift development. Expert in cross-platform solutions, native iOS development, and creating elegant mobile applications. Based in Morocco, available for remote work.",
+            "keywords": "Oussama Berhili, Mobile Developer, Flutter Developer, Swift Developer, iOS Developer, Cross-platform Development, Mobile App Development, Morocco, Rabat, Senior Developer, Mobile Applications, Flutter Expert, Swift Expert"
+        },
+        "navigation": {
+            "about": "About",
+            "experience": "Experience",
+            "projects": "Projects",
+            "skills": "Skills",
+            "education": "Education",
+            "contact": "Contact"
+        },
+        "hero": {
+            "name": "Oussama Berhili",
+            "title": "Sr Mobile Developer | Flutter & Swift Specialist",
+            "bio": "Passionate Senior Mobile Developer specializing in creating elegant, efficient, and user-friendly mobile applications with Flutter and Swift. Experienced in cross-platform solutions and native iOS development.",
+            "downloadCV": "Download CV",
+            "contactMe": "Contact Me"
+        },
+        "about": {
+            "title": "About Me",
+            "paragraph1": "A dedicated and results-oriented developer with a strong background in both mobile and web technologies. My journey in software development has been driven by a passion for building intuitive user interactions and solving complex problems. I thrive in collaborative environments, leveraging Scrum methodologies for efficient teamwork and delivery.",
+            "paragraph2": "My technical expertise spans native iOS development with Swift and UIKit/SwiftUI, and cross-platform development with Flutter. I'm also proficient in backend development using Laravel and Spring Boot, and experienced with various databases and cloud services like Firebase.",
+            "keyStrengths": "Key strengths include:",
+            "strength1": "Strong communication and collaboration skills.",
+            "strength2": "High adaptability to new technologies and challenges.",
+            "strength3": "Proven problem-resolution abilities.",
+            "strength4": "Commitment to continuous self-improvement and learning.",
+            "hobbies": "Outside of coding, I enjoy music and focusing on self-improvement."
+        },
+        "experience": {
+            "title": "Experience",
+            "nativeDeveloper": {
+                "title": "Native Developer",
+                "company": "Credit agricole du maroc, Rabat | Dec 2024 - Current",
+                "description1": "Developed native iOS apps using Swift and Xcode, integrating REST APIs, CoreData, and UIKit.",
+                "description2": "Implemented MVVM architecture and wrote unit tests using XCTest.",
+                "description3": "Familiar with SwiftUI, CoreData, and Combine."
+            },
+            "flutterSwiftDeveloper": {
+                "title": "Flutter/Swift Developer",
+                "company": "Gentis, Casablanca | Dec 2023 - Dec 2024",
+                "description1": "Developed robust Flutter applications using DDD principles and Riverpod.",
+                "description2": "Implemented Scrum methodologies for efficient team collaboration.",
+                "description3": "Managed CI/CD pipelines and version control using Git."
+            },
+            "mobileWebDev1": {
+                "title": "Mobile/Web Development",
+                "company": "NewEra Com, Rabat | June 2023 - December 2023",
+                "description1": "Developed maintainable and optimized web/mobile apps using Flutter, Firebase, and Laravel."
+            },
+            "mobileWebDev2": {
+                "title": "Mobile/Web Development (Freelance)",
+                "company": "Mediating, Rabat | April 2023 - January 2024",
+                "description1": "Developed mobile/web apps using Flutter, Firebase, and Spring Boot."
+            },
+            "mobileDev1": {
+                "title": "Mobile Development (Freelance)",
+                "company": "MakenessLabs, Paris | April 2023 - January 2024",
+                "description1": "Developed mobile apps using Flutter and Firebase."
+            },
+            "mobileWebDev3": {
+                "title": "Mobile/Web Development",
+                "company": "MedyouIn, Meknes | Oct 2020 - June 2023",
+                "description1": "Developed web/mobile apps using Flutter, Firebase, and Laravel.",
+                "description2": "Focused on intuitive user interactions and participated in software design."
+            },
+            "webDesktopDev": {
+                "title": "Web/Desktop Development (Freelance)",
+                "company": "ResterEco, Meknes | Sep 2020 - June 2021",
+                "description1": "Developed web apps (Laravel) and desktop apps (Java FX)."
+            },
+            "mobileWebDev4": {
+                "title": "Mobile/Web Development (Freelance)",
+                "company": "Freelancing, Meknes | 2020 - Current",
+                "description1": "Developed mobile apps using Flutter and Laravel.",
+                "description2": "Collaborated on projects like dental web apps and phone store management."
+            }
+        },
+        "projects": {
+            "title": "Projects",
+            "wiggli": {
+                "title": "Wiggli",
+                "description": "Business communication app with video call features. (2024)",
+                "tools": "Tools:"
+            },
+            "orange": {
+                "title": "Orange (NewEra)",
+                "description": "Tracking SAV and router installation app for Orange users. (2023)",
+                "tools": "Tools:"
+            },
+            "motopickup": {
+                "title": "Motopickup",
+                "description": "Mobile app for transporting people/orders via motorcycles. (Sep 2022 - Jan 2023)",
+                "tools": "Tools:"
+            },
+            "grandHotel": {
+                "title": "Grand Hotel Villa de France",
+                "description": "Hotel app for guest information and services. (Sep 2022)",
+                "tools": "Tools:"
+            },
+            "atar": {
+                "title": "Atar",
+                "description": "Web app to help tourists discover destinations. (May 2023)",
+                "tools": "Tools:"
+            },
+            "synease": {
+                "title": "Synease",
+                "description": "Mobile app for organizing syndic work. (July 2023)",
+                "tools": "Tools:"
+            },
+            "dabaPermis": {
+                "title": "Daba Permis",
+                "description": "Mobile app for managing driving schools. (May 2022 - July 2022)",
+                "tools": "Tools:"
+            },
+            "dentalWeb": {
+                "title": "Dental Web App",
+                "description": "Web application for managing a dental cabinet. (Sep 2020 - July 2021)",
+                "tools": "Tools:"
+            }
+        },
+        "skills": {
+            "title": "Technical Skills",
+            "languages": {
+                "title": "Languages",
+                "description": "Dart, Swift, Java, C#, Kotlin."
+            },
+            "frameworks": {
+                "title": "Frameworks & Libraries",
+                "description": "Flutter, UIKit, SwiftUI, Combine, Laravel."
+            },
+            "tools": {
+                "title": "Developer Tools",
+                "description": "Xcode, fastlane (CI/CD), Git."
+            },
+            "cloud": {
+                "title": "Cloud/Databases",
+                "description": "Firebase, Oracle, MySQL, PostgreSQL, CoreData."
+            },
+            "architectures": {
+                "title": "Architectures & Methodologies",
+                "description": "MVVM, DDD, Scrum, REST APIs."
+            }
+        },
+        "education": {
+            "title": "Education",
+            "licence": {
+                "title": "Licence professionnelle, Development of information and communication systems",
+                "school": "Ecole supérieure de technologie Meknès | 2022 - 2023"
+            },
+            "dut": {
+                "title": "Diplôme Universitaire de Technologie, Informatique, Génie logiciel",
+                "school": "Ecole supérieure de technologie Meknès | 2020 - 2022"
+            },
+            "bac": {
+                "title": "Baccalauréat, Science math",
+                "school": "Omar ibn Ikhatab | 2019 - 2020"
+            }
+        },
+        "certifications": {
+            "title": "Certifications",
+            "testdome": "TESTDOME flutter CERTIFICATE (Aug 2022)",
+            "encryption": "Encryption ISOC CERTIFICATE (May 2023)",
+            "netops": "NETOPS ISOC CERTIFICATE (July 2023)",
+            "ipv6": "IPV6 SAGE CERTIFICATE (July 2021)"
+        },
+        "contact": {
+            "title": "Get In Touch",
+            "description": "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
+            "email": "oussamaberhili190@gmail.com",
+            "phone": "+212 621460332"
+        },
+        "footer": {
+            "copyright": "Oussama Berhili. All rights reserved."
+        }
+    },
+    "fr": {
+        "meta": {
+            "title": "Oussama Berhili | Développeur Mobile Senior | Spécialiste Flutter & Swift au Maroc",
+            "description": "Développeur Mobile Senior spécialisé dans le développement Flutter et Swift. Expert en solutions cross-platform, développement iOS natif, et création d'applications mobiles élégantes. Basé au Maroc, disponible pour le travail à distance.",
+            "keywords": "Oussama Berhili, Développeur Mobile, Développeur Flutter, Développeur Swift, Développeur iOS, Développement Cross-platform, Développement d'Applications Mobiles, Maroc, Rabat, Développeur Senior, Applications Mobiles, Expert Flutter, Expert Swift"
+        },
+        "navigation": {
+            "about": "À propos",
+            "experience": "Expérience",
+            "projects": "Projets",
+            "skills": "Compétences",
+            "education": "Formation",
+            "contact": "Contact"
+        },
+        "hero": {
+            "name": "Oussama Berhili",
+            "title": "Développeur Mobile Sr | Spécialiste Flutter & Swift",
+            "bio": "Développeur Mobile Senior passionné, spécialisé dans la création d'applications mobiles élégantes, efficaces et conviviales avec Flutter et Swift. Expérimenté dans les solutions cross-platform et le développement iOS natif.",
+            "downloadCV": "Télécharger CV",
+            "contactMe": "Me Contacter"
+        },
+        "about": {
+            "title": "À propos de moi",
+            "paragraph1": "Un développeur dévoué et axé sur les résultats avec une solide expérience dans les technologies mobiles et web. Mon parcours dans le développement logiciel a été motivé par une passion pour créer des interactions utilisateur intuitives et résoudre des problèmes complexes. Je prospère dans des environnements collaboratifs, en tirant parti des méthodologies Scrum pour un travail d'équipe et une livraison efficaces.",
+            "paragraph2": "Mon expertise technique couvre le développement iOS natif avec Swift et UIKit/SwiftUI, et le développement cross-platform avec Flutter. Je suis également compétent dans le développement backend utilisant Laravel et Spring Boot, et expérimenté avec diverses bases de données et services cloud comme Firebase.",
+            "keyStrengths": "Points forts principaux :",
+            "strength1": "Solides compétences en communication et collaboration.",
+            "strength2": "Haute adaptabilité aux nouvelles technologies et défis.",
+            "strength3": "Capacités éprouvées de résolution de problèmes.",
+            "strength4": "Engagement envers l'amélioration continue et l'apprentissage.",
+            "hobbies": "En dehors du codage, j'aime la musique et me concentrer sur l'amélioration personnelle."
+        },
+        "experience": {
+            "title": "Expérience",
+            "nativeDeveloper": {
+                "title": "Développeur Natif",
+                "company": "Credit agricole du maroc, Rabat | Déc 2024 - Actuel",
+                "description1": "Développé des applications iOS natives utilisant Swift et Xcode, intégrant des API REST, CoreData et UIKit.",
+                "description2": "Implémenté l'architecture MVVM et écrit des tests unitaires utilisant XCTest.",
+                "description3": "Familiarisé avec SwiftUI, CoreData et Combine."
+            },
+            "flutterSwiftDeveloper": {
+                "title": "Développeur Flutter/Swift",
+                "company": "Gentis, Casablanca | Déc 2023 - Déc 2024",
+                "description1": "Développé des applications Flutter robustes utilisant les principes DDD et Riverpod.",
+                "description2": "Implémenté les méthodologies Scrum pour une collaboration d'équipe efficace.",
+                "description3": "Géré les pipelines CI/CD et le contrôle de version utilisant Git."
+            },
+            "mobileWebDev1": {
+                "title": "Développement Mobile/Web",
+                "company": "NewEra Com, Rabat | Juin 2023 - Décembre 2023",
+                "description1": "Développé des applications web/mobiles maintenables et optimisées utilisant Flutter, Firebase et Laravel."
+            },
+            "mobileWebDev2": {
+                "title": "Développement Mobile/Web (Freelance)",
+                "company": "Mediating, Rabat | Avril 2023 - Janvier 2024",
+                "description1": "Développé des applications mobile/web utilisant Flutter, Firebase et Spring Boot."
+            },
+            "mobileDev1": {
+                "title": "Développement Mobile (Freelance)",
+                "company": "MakenessLabs, Paris | Avril 2023 - Janvier 2024",
+                "description1": "Développé des applications mobiles utilisant Flutter et Firebase."
+            },
+            "mobileWebDev3": {
+                "title": "Développement Mobile/Web",
+                "company": "MedyouIn, Meknès | Oct 2020 - Juin 2023",
+                "description1": "Développé des applications web/mobiles utilisant Flutter, Firebase et Laravel.",
+                "description2": "Concentré sur les interactions utilisateur intuitives et participé à la conception logicielle."
+            },
+            "webDesktopDev": {
+                "title": "Développement Web/Desktop (Freelance)",
+                "company": "ResterEco, Meknès | Sep 2020 - Juin 2021",
+                "description1": "Développé des applications web (Laravel) et desktop (Java FX)."
+            },
+            "mobileWebDev4": {
+                "title": "Développement Mobile/Web (Freelance)",
+                "company": "Freelancing, Meknès | 2020 - Actuel",
+                "description1": "Développé des applications mobiles utilisant Flutter et Laravel.",
+                "description2": "Collaboré sur des projets comme des applications web dentaires et la gestion de magasins de téléphones."
+            }
+        },
+        "projects": {
+            "title": "Projets",
+            "wiggli": {
+                "title": "Wiggli",
+                "description": "Application de communication d'entreprise avec fonctionnalités d'appel vidéo. (2024)",
+                "tools": "Outils :"
+            },
+            "orange": {
+                "title": "Orange (NewEra)",
+                "description": "Application de suivi SAV et d'installation de routeurs pour les utilisateurs Orange. (2023)",
+                "tools": "Outils :"
+            },
+            "motopickup": {
+                "title": "Motopickup",
+                "description": "Application mobile pour transporter des personnes/commandes via motos. (Sep 2022 - Jan 2023)",
+                "tools": "Outils :"
+            },
+            "grandHotel": {
+                "title": "Grand Hotel Villa de France",
+                "description": "Application hôtelière pour les informations et services aux invités. (Sep 2022)",
+                "tools": "Outils :"
+            },
+            "atar": {
+                "title": "Atar",
+                "description": "Application web pour aider les touristes à découvrir les destinations. (Mai 2023)",
+                "tools": "Outils :"
+            },
+            "synease": {
+                "title": "Synease",
+                "description": "Application mobile pour organiser le travail syndical. (Juillet 2023)",
+                "tools": "Outils :"
+            },
+            "dabaPermis": {
+                "title": "Daba Permis",
+                "description": "Application mobile pour gérer les auto-écoles. (Mai 2022 - Juillet 2022)",
+                "tools": "Outils :"
+            },
+            "dentalWeb": {
+                "title": "Application Web Dentaire",
+                "description": "Application web pour gérer un cabinet dentaire. (Sep 2020 - Juillet 2021)",
+                "tools": "Outils :"
+            }
+        },
+        "skills": {
+            "title": "Compétences Techniques",
+            "languages": {
+                "title": "Langages",
+                "description": "Dart, Swift, Java, C#, Kotlin."
+            },
+            "frameworks": {
+                "title": "Frameworks & Bibliothèques",
+                "description": "Flutter, UIKit, SwiftUI, Combine, Laravel."
+            },
+            "tools": {
+                "title": "Outils de Développement",
+                "description": "Xcode, fastlane (CI/CD), Git."
+            },
+            "cloud": {
+                "title": "Cloud/Bases de Données",
+                "description": "Firebase, Oracle, MySQL, PostgreSQL, CoreData."
+            },
+            "architectures": {
+                "title": "Architectures & Méthodologies",
+                "description": "MVVM, DDD, Scrum, API REST."
+            }
+        },
+        "education": {
+            "title": "Formation",
+            "licence": {
+                "title": "Licence professionnelle, Développement des systèmes d'information et de communication",
+                "school": "Ecole supérieure de technologie Meknès | 2022 - 2023"
+            },
+            "dut": {
+                "title": "Diplôme Universitaire de Technologie, Informatique, Génie logiciel",
+                "school": "Ecole supérieure de technologie Meknès | 2020 - 2022"
+            },
+            "bac": {
+                "title": "Baccalauréat, Science math",
+                "school": "Omar ibn Ikhatab | 2019 - 2020"
+            }
+        },
+        "certifications": {
+            "title": "Certifications",
+            "testdome": "CERTIFICAT TESTDOME flutter (Août 2022)",
+            "encryption": "CERTIFICAT Encryption ISOC (Mai 2023)",
+            "netops": "CERTIFICAT NETOPS ISOC (Juillet 2023)",
+            "ipv6": "CERTIFICAT IPV6 SAGE (Juillet 2021)"
+        },
+        "contact": {
+            "title": "Entrer en Contact",
+            "description": "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités pour faire partie de votre vision.",
+            "email": "oussamaberhili190@gmail.com",
+            "phone": "+212 621460332"
+        },
+        "footer": {
+            "copyright": "Oussama Berhili. Tous droits réservés."
+        }
+    }
+}
