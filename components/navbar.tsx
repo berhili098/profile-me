@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useCallback, useEffect, useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { locales, type Locale, type Messages } from '@/lib/i18n'
 
 interface NavbarProps {
@@ -13,6 +13,7 @@ interface NavbarProps {
 
 export function Navbar ({ locale, navigation, personName }: NavbarProps) {
   const pathname = usePathname()
+  const [scrolled, setScrolled] = useState(false)
   const navLinksRef = useRef<HTMLUListElement>(null)
   const navTogglerRef = useRef<HTMLButtonElement>(null)
 
@@ -41,6 +42,15 @@ export function Navbar ({ locale, navigation, personName }: NavbarProps) {
 
     toggler.addEventListener('click', onToggle)
     return () => toggler.removeEventListener('click', onToggle)
+  }, [])
+
+  useEffect(() => {
+    function onDocScroll () {
+      setScrolled(window.scrollY > 12)
+    }
+    onDocScroll()
+    window.addEventListener('scroll', onDocScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onDocScroll)
   }, [])
 
   useEffect(() => {
@@ -85,7 +95,7 @@ export function Navbar ({ locale, navigation, personName }: NavbarProps) {
     pathname === `/${lang}` || pathname.startsWith(`/${lang}/`)
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="container">
         <Link href={`/${locale}#hero`} className="nav-brand" prefetch={false}>
           {personName}
@@ -114,6 +124,11 @@ export function Navbar ({ locale, navigation, personName }: NavbarProps) {
           <li>
             <a href="#education" onClick={handleNavLinkClick}>
               {navigation.education}
+            </a>
+          </li>
+          <li>
+            <a href="#certifications" onClick={handleNavLinkClick}>
+              {navigation.certifications}
             </a>
           </li>
           <li>

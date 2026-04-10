@@ -1,24 +1,26 @@
 import type { Viewport } from 'next'
-import { Roboto, Poppins } from 'next/font/google'
+import { JetBrains_Mono, Plus_Jakarta_Sans } from 'next/font/google'
+import { CursorAura } from '@/components/cursor-aura'
+import { ScrollRevealBoot } from '@/components/scroll-reveal-boot'
 import { defaultLocale } from '@/lib/i18n'
 import './globals.css'
 
-const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
+const plusJakarta = Plus_Jakarta_Sans({
+  weight: ['400', '500', '600', '700', '800'],
   subsets: ['latin'],
-  variable: '--font-roboto',
+  variable: '--font-sans',
   display: 'swap'
 })
 
-const poppins = Poppins({
-  weight: ['300', '400', '600', '700'],
+const jetbrainsMono = JetBrains_Mono({
+  weight: ['400', '500', '600'],
   subsets: ['latin'],
-  variable: '--font-poppins',
+  variable: '--font-mono',
   display: 'swap'
 })
 
 export const viewport: Viewport = {
-  themeColor: '#0A0C0F',
+  themeColor: '#030712',
   width: 'device-width',
   initialScale: 1
 }
@@ -32,7 +34,7 @@ export default function RootLayout ({
     <html
       lang={defaultLocale}
       id="html-lang"
-      className={`${roboto.variable} ${poppins.variable}`}
+      className={`${plusJakarta.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -41,7 +43,11 @@ export default function RootLayout ({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <ScrollRevealBoot />
+        <CursorAura />
+        {children}
+      </body>
     </html>
   )
 }
