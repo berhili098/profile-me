@@ -1,9 +1,13 @@
-# Next.js on Netlify uses the OpenNext-based runtime — do not point "Publish directory"
-# at `public` or `out` unless you use `output: 'export'`.
+# Next.js on Netlify (OpenNext): publish must NOT equal the repo root — the UI
+# sometimes sets "Publish directory" to the site base and the plugin then fails:
+# "Your publish directory cannot be the same as the base directory of your site."
+# This file overrides the dashboard. You can also clear "Publish directory" in the UI.
 # See: https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/
+# Starter reference: https://github.com/netlify-templates/next-platform-starter
 
 [build]
   command = "npm run build"
+  publish = ".next"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
