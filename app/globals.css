@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-roboto), 'Roboto', sans-serif;
     line-height: 1.6;
     color: #e0e6f0;
     background-color: #0A0C0F;
@@ -21,7 +21,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
     font-weight: 600;
     color: #ffffff;
     line-height: 1.2;
@@ -140,7 +140,7 @@ a:hover {
     font-size: 1.8rem;
     font-weight: 700;
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins), 'Poppins', sans-serif;
     transition: color 0.3s ease;
 }
 .nav-brand:hover {
