@@ -1,0 +1,12 @@
+# Next.js on Netlify uses the OpenNext-based runtime — do not point "Publish directory"
+# at `public` or `out` unless you use `output: 'export'`.
+# See: https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/
+
+[build]
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
